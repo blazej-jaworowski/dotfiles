@@ -27,7 +27,3 @@ $INSTALL_INSTRUCTION ripgrep mercurial wget || exit 1
 # install neovim config
 mkdir -p "$HOME/.config"
 git clone https://github.com/blazej-jaworowski/nvim-distro.git $HOME/.config/nvim
-
-# "fix" nvim-treesitter issues
-rm $LOCAL_INSTALL_PATH/lib/parser/lua.so
-rm $LOCAL_INSTALL_PATH/lib/parser/vimdoc.so
