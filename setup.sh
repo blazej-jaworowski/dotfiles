@@ -8,8 +8,8 @@ fi
 mkdir -p "$HOME/.local"
 export LOCAL_INSTALL_PATH="$HOME/.local"
 
-# setup python
-$INSTALL_INSTRUCTION python3 python3-pip python3-venv || exit 1
+# build deps
+$INSTALL_INSTRUCTION build-essential cmake gettext unzip || exit 1
 
 # zsh
 $INSTALL_INSTRUCTION zsh
