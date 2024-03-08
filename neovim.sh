@@ -16,8 +16,8 @@ echo "Setting up neovim"
 $INSTALL_INSTRUCTION build-essential cmake gettext unzip || exit 1
 
 # install neovim
-git clone -b "v0.9.5" --depth 1 https://github.com/neovim/neovim.git || exit 1
-cd neovim
+git clone -b "v0.9.5" --depth 1 https://github.com/neovim/neovim.git $HOME/neovim || exit 1
+cd $HOME/neovim
 make CMAKE_BUILD_TYPE=Release CMAKE_INSTALL_PREFIX=$LOCAL_INSTALL_PATH -j || exit 1
 make install || exit 1
 
