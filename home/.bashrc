@@ -2,8 +2,8 @@ export PATH=~/.local/share/junest/bin:$PATH
 export PATH=$PATH:~/.junest/usr/bin_wrappers
 
 # Run zsh
-if [ "$SHELL" != "/usr/bin/zsh" ]
+if [ "$SHELL" != "$(which zsh)" ]
 then
-    export SHELL="/usr/bin/zsh"
-    exec /usr/bin/zsh
+    export SHELL="$(which zsh)"
+    exec zsh
 fi
