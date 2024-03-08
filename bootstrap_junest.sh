@@ -27,6 +27,7 @@ Server = http://ftp.vectranet.pl/archlinux/$repo/os/$arch
 
 junest sudo pacman -Syu --noconfirm
 junest sudo pacman -Sy --noconfirm base-devel
+junest sudo pacman -Sy --noconfirm python python-virtualenv python-pip
 
 export PATH="$PATH:$HOME/.junest/usr/bin_wrappers"
 
