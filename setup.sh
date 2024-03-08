@@ -8,9 +8,6 @@ fi
 mkdir -p "$HOME/.local"
 export LOCAL_INSTALL_PATH="$HOME/.local"
 
-# build deps
-$INSTALL_INSTRUCTION build-essential cmake gettext unzip || exit 1
-
 # zsh
 $INSTALL_INSTRUCTION zsh
 git clone --depth 1 https://github.com/ohmyzsh/ohmyzsh.git $HOME/.oh-my-zsh

@@ -26,6 +26,7 @@ Server = http://ftp.vectranet.pl/archlinux/$repo/os/$arch
 ' > $HOME/.junest/etc/pacman.d/mirrorlist
 
 junest sudo pacman -Syu --noconfirm
+junest sudo pacman -Sy base-devel
 
 export PATH="$PATH:$HOME/.junest/usr/bin_wrappers"
 
