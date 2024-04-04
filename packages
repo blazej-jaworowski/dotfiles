@@ -1,0 +1,16 @@
+git
+zsh
+neovim
+ripgrep
+mercurial
+wget
+gettext
+unzip
+curl
+stow
+cmake
+tldr
+zoxide
+build-essential
+python3
+atool
